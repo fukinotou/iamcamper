@@ -7,6 +7,7 @@ gem 'rails', '3.1.0.rc5'
 
 gem 'sqlite3'
 
+gem 'rspec-rails', '>= 2.6.0', :group => [:development, :test]
 
 # Gems used only for assets and not required
 # in production environments by default.
