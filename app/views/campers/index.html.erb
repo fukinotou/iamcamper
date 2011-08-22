@@ -1,0 +1,39 @@
+<h1>Listing campers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Bio</th>
+    <th>Year</th>
+    <th>Course</th>
+    <th>Twitter</th>
+    <th>Twitter token</th>
+    <th>Twitter secret</th>
+    <th>File</th>
+    <th>Invited by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @campers.each do |camper| %>
+  <tr>
+    <td><%= camper.name %></td>
+    <td><%= camper.bio %></td>
+    <td><%= camper.year %></td>
+    <td><%= camper.course_id %></td>
+    <td><%= camper.twitter_id %></td>
+    <td><%= camper.twitter_token %></td>
+    <td><%= camper.twitter_secret %></td>
+    <td><%= camper.file %></td>
+    <td><%= camper.invited_by %></td>
+    <td><%= link_to 'Show', camper %></td>
+    <td><%= link_to 'Edit', edit_camper_path(camper) %></td>
+    <td><%= link_to 'Destroy', camper, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Camper', new_camper_path %>

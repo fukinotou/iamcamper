@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @camper.name %>
+</p>
+
+<p>
+  <b>Bio:</b>
+  <%= @camper.bio %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @camper.year %>
+</p>
+
+<p>
+  <b>Course:</b>
+  <%= @camper.course_id %>
+</p>
+
+<p>
+  <b>Twitter:</b>
+  <%= @camper.twitter_id %>
+</p>
+
+<p>
+  <b>Twitter token:</b>
+  <%= @camper.twitter_token %>
+</p>
+
+<p>
+  <b>Twitter secret:</b>
+  <%= @camper.twitter_secret %>
+</p>
+
+<p>
+  <b>File:</b>
+  <%= @camper.file %>
+</p>
+
+<p>
+  <b>Invited by:</b>
+  <%= @camper.invited_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_camper_path(@camper) %> |
+<%= link_to 'Back', campers_path %>
