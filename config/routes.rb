@@ -1,4 +1,6 @@
 Iamcamper::Application.routes.draw do
+  resources :courses
+
   resources :campers
 
   # The priority is based upon order of creation:
