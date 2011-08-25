@@ -25,7 +25,6 @@ class CampersController < ApplicationController
   # GET /campers/new.json
   def new
     @camper = Camper.new
-    @courses = Course.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -36,7 +35,6 @@ class CampersController < ApplicationController
   # GET /campers/1/edit
   def edit
     @camper = Camper.find(params[:id])
-    @courses = Course.all
   end
 
   # POST /campers
