@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :course_id %><br />
-    <%= f.select :course_id, @courses.map { |c| [c.name, c.id] } %>
+    <%= f.select :course_id, @courses %>
   </div>
   <div class="field">
     <%= f.label :twitter_id %><br />
