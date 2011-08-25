@@ -3,7 +3,6 @@ class CampersController < ApplicationController
   # GET /campers.json
   def index
     @campers = Camper.all
-    @courses = Course.all.map { |c| c.name }
 
     respond_to do |format|
       format.html # index.html.erb

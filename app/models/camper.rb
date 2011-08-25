@@ -1,4 +1,3 @@
 class Camper < ActiveRecord::Base
-end
-class Course < ActiveRecord::Base
+  belongs_to :course
 end
